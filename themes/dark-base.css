@@ -423,3 +423,16 @@ span.fpm-area-img_upload {
 .content span[style*="color: red"] b {
     color: #337799 !important;
 }
+
+.msgpost {
+    border: 1px solid #545454 !important;
+}
+.msgpost-txt-i {
+    margin-left: 3px !important;
+}
+.msgpost-signature {
+    margin-left: 3px !important;
+}
+.penalty {
+    margin-left: 3px !important;
+}
