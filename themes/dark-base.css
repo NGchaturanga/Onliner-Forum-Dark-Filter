@@ -347,6 +347,31 @@ a.topictitle:active {
     color: #c7e2ff !important;
 }
 
+a.tforumtitle,
+a.tforumtitle:link,
+a.tforumtitle:hover,
+a.tforumtitle:active,
+a.tforumtitle:focus,
+a.tforumtitle:focus-visible {
+    color: #66b3ff !important;
+    text-decoration: none !important;
+}
+
+a.forumtitle:visited {
+    color: #aadcff !important;
+}
+
+a.forumtitle:hover,
+a.forumtitle:focus,
+a.forumtitle:focus-visible {
+    color: #9fd0ff !important;
+    text-decoration: underline !important;
+}
+
+a.forumtitle:active {
+    color: #c7e2ff !important;
+}
+
 h3 a {
     color: #78b7ff;
 }
