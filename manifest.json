@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Onliner Forum Dark + Filter",
+  "version": "0.3",
+  "description": "Темная тема и фильтрация пользователей на forum.onliner.by",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://forum.onliner.by/*",
+    "http://forum.onliner.by/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Onliner Forum Dark + Filter"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://forum.onliner.by/*",
+        "http://forum.onliner.by/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "/themes/dark-base.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

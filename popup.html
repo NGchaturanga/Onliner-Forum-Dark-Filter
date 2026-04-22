@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Onliner Forum Dark + Filter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="section">
+    <h2>Фильтрация</h2>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="filterEnabled">
+      <label for="filterEnabled">Включить фильтрацию</label>
+    </div>
+
+    <label for="defaultMode">Режим по умолчанию</label>
+    <select id="defaultMode">
+      <option value="none">Ничего не делать</option>
+      <option value="images">Скрывать изображения</option>
+    </select>
+
+    <div class="hint">
+      Для конкретных пользователей можно задать отдельный режим по ID.
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Пользователи</h3>
+    <div id="usersList"></div>
+    <button id="addUser" class="secondary">Добавить пользователя</button>
+    <div class="hint">
+      Числовой user_id, например: 863453
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="actions">
+      <button id="save">Сохранить</button>
+      <button id="reloadTab" class="secondary">Перезагрузить вкладку</button>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <template id="userRowTemplate">
+    <div class="user-row">
+      <div class="user-row-grid">
+        <div>
+          <label>ID пользователя</label>
+          <input type="text" class="user-id" placeholder="например 863453">
+        </div>
+        <div>
+          <label>Режим</label>
+          <select class="user-mode">
+            <option value="none">Ничего не делать</option>
+            <option value="posts">Скрывать посты</option>
+            <option value="images">Скрывать изображения</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" class="remove-user danger">X</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>
