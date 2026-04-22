@@ -257,6 +257,20 @@ i.sh, .mtauthor-nickname .sh {
     border-color: #344150 !important;
 }
 
+.b-form-postmsg.quick_reply .form-postmsg-i {
+    display: flex !important;
+    align-items: flex-start !important;
+}
+
+.b-form-postmsg.quick_reply .b-mtauthor {
+    flex: 0 0 auto !important;
+}
+
+.b-form-postmsg.quick_reply .b-fpm-area {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
 #postmessage, textarea.i-p, .resizable-input, .markItUpEditor,
 .markItUp, .markItUpContainer, .markItUpHeader, .markItUpHeader ul,
 .fpm-area-text, .bbcode-tooltip.postmessage, #r-smilies, .bbcode-smilies-container {
