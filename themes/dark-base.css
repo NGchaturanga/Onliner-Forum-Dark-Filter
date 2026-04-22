@@ -284,6 +284,10 @@ i.sh, .mtauthor-nickname .sh {
   color: #444444 !important;
 }
 
+.b-lt-subj {
+    color: #80a0b3;
+}
+
 a,
 a:link {
     color: #66b3ff;
@@ -366,9 +370,11 @@ a.dark-gray:active {
 .msgpost-spoiler-txt{
     background-color: #3a3a3a;
 }
-/*.msgpost-spoiler-outer{*/
-/*    background-color: #1f3144;*/
-/*}*/
-/*.content{*/
-/*    background-color: #1f3144;*/
-/*}*/
+
+li{
+    color: #dbe7f3 !important;
+}
+
+.i-hot{
+    color: #dbe7f3 !important;
+}
