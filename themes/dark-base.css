@@ -211,8 +211,8 @@ i.sh, .mtauthor-nickname .sh {
     opacity: .85 !important;
 }
 
-#topic-search{
-  margin: 0;
+#topic-search {
+    margin: 0;
 }
 
 /* редактор */
@@ -251,20 +251,19 @@ i.sh, .mtauthor-nickname .sh {
 
 #like-buttons,
 .ofm-social-forum {
-  display: none !important;
+    display: none !important;
 }
 
 .banner-centered {
-  display: none !important;
+    display: none !important;
 }
 
 .b-forum-banner {
-  display: none !important;
+    display: none !important;
 }
 
-.bnr-top-wide_fixed-height
-{
-  display: none !important;
+.bnr-top-wide_fixed-height {
+    display: none !important;
 }
 
 .btn-send,
@@ -273,15 +272,16 @@ i.sh, .mtauthor-nickname .sh {
 .btn-send:hover,
 .btn-send:active,
 .btn-send:focus {
-  color: #444444 !important;
+    color: #444444 !important;
 }
+
 .btn-reply,
 .btn-reply:link,
 .btn-reply:visited,
 .btn-reply:hover,
 .btn-reply:active,
 .btn-reply:focus {
-  color: #444444 !important;
+    color: #444444 !important;
 }
 
 .b-lt-subj {
@@ -339,11 +339,11 @@ a.topictitle:active {
     color: #c7e2ff !important;
 }
 
-h3 a{
+h3 a {
     color: #78b7ff;
 }
 
-.b-lt-author a{
+.b-lt-author a {
     color: #78b7ff;
 }
 
@@ -352,7 +352,7 @@ a.gray:link,
 a.gray:visited,
 a.gray:hover,
 a.gray:active {
-  color: #b4dff8 !important;
+    color: #b4dff8 !important;
 }
 
 a.dark-gray,
@@ -360,33 +360,42 @@ a.dark-gray:link,
 a.dark-gray:visited,
 a.dark-gray:hover,
 a.dark-gray:active {
-  color: #d9f1ff !important;
+    color: #d9f1ff !important;
 }
 
-.total-msg{
+.h-hottopics .b-list-topics a {
+    color: #f86f84 !important;
+}
+
+
+.total-msg {
     color: #78b7ff;
 }
 
-.msgpost-spoiler-txt{
+.msgpost-spoiler-txt {
     background-color: #3a3a3a;
 }
 
-li{
+li {
     color: #dbe7f3 !important;
 }
 
-.i-hot{
+.i-hot {
     color: #dbe7f3 !important;
 }
-#global-chat-app{
+
+#global-chat-app {
     background-color: #545454 !important;
 }
-#notifications-list{
+
+#notifications-list {
     background-color: #505050 !important;
 }
-.b-top-profile__favorites{
+
+.b-top-profile__favorites {
     background-color: #545454 !important;
 }
-#cart-desktop{
+
+#cart-desktop {
     background-color: #505050 !important;
 }
