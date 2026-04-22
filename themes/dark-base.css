@@ -111,6 +111,30 @@ i.sh, .mtauthor-nickname .sh {
     display: none !important;
 }
 
+/*аватар*/
+/*.ava-box {*/
+/*    display: none !important;*/
+/*}*/
+
+/*Member*/
+.sts-prof {
+    display: none !important;
+}
+
+/*аватарка возле ответа*/
+/*.b-mtauthor {*/
+/*    display: none !important;*/
+/*}*/
+
+/*Сравнивай и покупай!*/
+.b-main-navigation__bubble, .b-main-navigation__bubble_universal {
+    display: none !important;
+}
+/*Клевер*/
+.b-top-navigation-clover {
+    display: none !important;
+}
+
 /* обычные кнопки */
 .btn-style, .btn, button, input[type="button"], input[type="submit"] {
     background: #182331 !important;
@@ -363,6 +387,14 @@ a.dark-gray:active {
     color: #d9f1ff !important;
 }
 
+a.msgpost-spoiler-hd,
+a.msgpost-spoiler-hd:link,
+a.msgpost-spoiler-hd:visited,
+a.msgpost-spoiler-hd:hover,
+a.msgpost-spoiler-hd:active {
+    color: #222222 !important;
+}
+
 .h-hottopics .b-list-topics a {
     color: #f86f84 !important;
 }
@@ -402,4 +434,9 @@ li {
 
 span.fpm-area-img_upload {
     color: #66b3ff !important;
+}
+
+/*censored by*/
+.content span[style*="color: red"] b {
+    color: #337799 !important;
 }
