@@ -378,3 +378,15 @@ li{
 .i-hot{
     color: #dbe7f3 !important;
 }
+#global-chat-app{
+    background-color: #545454 !important;
+}
+#notifications-list{
+    background-color: #505050 !important;
+}
+.b-top-profile__favorites{
+    background-color: #545454 !important;
+}
+#cart-desktop{
+    background-color: #505050 !important;
+}
