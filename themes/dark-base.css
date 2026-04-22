@@ -258,6 +258,10 @@ i.sh, .mtauthor-nickname .sh {
   display: none !important;
 }
 
+.b-forum-banner {
+  display: none !important;
+}
+
 .bnr-top-wide_fixed-height
 {
   display: none !important;
