@@ -399,3 +399,7 @@ li {
 #cart-desktop {
     background-color: #505050 !important;
 }
+
+span.fpm-area-img_upload {
+    color: #66b3ff !important;
+}
