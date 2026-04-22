@@ -254,6 +254,10 @@ i.sh, .mtauthor-nickname .sh {
   display: none !important;
 }
 
+.banner-centered {
+  display: none !important;
+}
+
 .bnr-top-wide_fixed-height
 {
   display: none !important;
