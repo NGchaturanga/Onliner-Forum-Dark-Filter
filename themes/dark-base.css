@@ -148,21 +148,32 @@ i.sh, .mtauthor-nickname .sh {
     border-color: #415b78 !important;
 }
 
-.btn-reply, .btn-style.btn-createsubj, .btn-createsubj {
+.btn-reply,
+.btn-reply:link,
+.btn-reply:visited,
+.btn-reply:hover,
+.btn-reply:active,
+.btn-reply:focus,
+.btn-style.btn-createsubj,
+.btn-createsubj {
     background: #1a2940 !important;
-    color: #e7c48f !important;
+    color: #444444 !important;
     border: 1px solid #435d7c !important;
 }
 
-.btn-send {
+.btn-send,
+.btn-send:link,
+.btn-send:visited,
+.btn-send:active,
+.btn-send:focus {
     background: #1c2a1c !important;
-    color: #b9d9b2 !important;
+    color: #444444 !important;
     border: 1px solid #486246 !important;
 }
 
 .btn-send:hover {
     background: #223423 !important;
-    color: #d8f0d2 !important;
+    color: #444444 !important;
     border-color: #5d7c5a !important;
 }
 
@@ -274,38 +285,11 @@ i.sh, .mtauthor-nickname .sh {
 }
 
 #like-buttons,
-.ofm-social-forum {
-    display: none !important;
-}
-
-.banner-centered {
-    display: none !important;
-}
-
-.b-forum-banner {
-    display: none !important;
-}
-
+.ofm-social-forum,
+.banner-centered,
+.b-forum-banner,
 .bnr-top-wide_fixed-height {
     display: none !important;
-}
-
-.btn-send,
-.btn-send:link,
-.btn-send:visited,
-.btn-send:hover,
-.btn-send:active,
-.btn-send:focus {
-    color: #444444 !important;
-}
-
-.btn-reply,
-.btn-reply:link,
-.btn-reply:visited,
-.btn-reply:hover,
-.btn-reply:active,
-.btn-reply:focus {
-    color: #444444 !important;
 }
 
 .b-lt-subj {
@@ -421,18 +405,12 @@ li {
     color: #dbe7f3 !important;
 }
 
-#global-chat-app {
-    background-color: #545454 !important;
-}
-
-#notifications-list {
-    background-color: #505050 !important;
-}
-
+#global-chat-app,
 .b-top-profile__favorites {
     background-color: #545454 !important;
 }
 
+#notifications-list,
 #cart-desktop {
     background-color: #505050 !important;
 }
