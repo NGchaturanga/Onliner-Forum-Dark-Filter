@@ -55,6 +55,11 @@ body,
     background: var(--bg-page) !important;
     color: var(--text-main) !important;
 }
+/*  LOGO    */
+
+img.onliner_logo {
+    filter: brightness(0.48) hue-rotate(180deg) invert(1) contrast(0.3) !important;
+}
 
 /*    HEADER / TOP NAVIGATION    */
 
@@ -1083,3 +1088,4 @@ form#report select.full {
 form#report textarea::placeholder {
     color: #8ea0b4 !important;
 }
+
