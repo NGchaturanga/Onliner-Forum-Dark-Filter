@@ -95,7 +95,9 @@ img.onliner_logo {
 /* Скрыть лишнее в шапке */
 .b-main-navigation__bubble,
 .b-main-navigation__bubble_universal,
-.b-top-navigation-clover {
+.b-top-navigation-clover,
+.b-main-navigation__advert
+{
     display: none !important;
 }
 
@@ -1089,3 +1091,111 @@ form#report textarea::placeholder {
     color: #8ea0b4 !important;
 }
 
+.b-top-profile__dropdown,
+.b-top-profile__dropdown_user,
+.b-top-profile__dropdown .b-top-profile__header,
+.b-top-profile__dropdown .b-top-profile__body,
+.b-top-profile__dropdown .b-top-profile__footer,
+.b-top-profile__dropdown .b-top-profile__overflow,
+.b-top-profile__dropdown .b-top-profile__sublist,
+.b-top-profile__dropdown .b-top-profile__control {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-main) !important;
+    box-shadow: none !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__header,
+.b-top-profile__dropdown .b-top-profile__footer,
+.b-top-profile__dropdown .b-top-profile__control {
+    background-color: var(--bg-panel) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__divider {
+    background: var(--border-main) !important;
+    background-color: var(--border-main) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__link,
+.b-top-profile__dropdown .b-top-profile__link:link,
+.b-top-profile__dropdown .b-top-profile__link:visited,
+.b-top-profile__dropdown .b-top-profile__settings,
+.b-top-profile__dropdown .js-open-submenu {
+    color: var(--text-main) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__link_alter,
+.b-top-profile__dropdown .b-top-profile__link_secondary,
+.b-top-profile__dropdown .js-open-submenu {
+    color: var(--text-muted) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__link_primary,
+.b-top-profile__dropdown #user-balance {
+    color: var(--text-link-hover) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__link:hover,
+.b-top-profile__dropdown .b-top-profile__link:focus,
+.b-top-profile__dropdown .b-top-profile__link:focus-visible,
+.b-top-profile__dropdown .js-open-submenu:hover,
+.b-top-profile__dropdown .js-open-submenu:focus,
+.b-top-profile__dropdown .js-open-submenu:focus-visible {
+    color: var(--text-link-hover) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem,
+.b-top-profile__dropdown .b-top-profile__subitem_basket,
+.b-top-profile__dropdown .b-top-profile__subitem_history,
+.b-top-profile__dropdown .b-top-profile__subitem_subscriptions {
+    background-color: transparent !important;
+    border-color: var(--border-main) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem:hover,
+.b-top-profile__dropdown .b-top-profile__subitem:focus-within {
+    background-color: var(--bg-button-hover) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__button,
+.b-top-profile__dropdown .b-top-profile__button:link,
+.b-top-profile__dropdown .b-top-profile__button:visited {
+    background-color: var(--bg-button-primary) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-strong) !important;
+    box-shadow: none !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__button:hover,
+.b-top-profile__dropdown .b-top-profile__button:focus,
+.b-top-profile__dropdown .b-top-profile__button:focus-visible {
+    background-color: var(--bg-button-hover) !important;
+    color: var(--text-link-hover) !important;
+    border-color: var(--border-strong) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__close,
+.b-top-profile__dropdown .b-top-profile__close::before,
+.b-top-profile__dropdown .b-top-profile__close::after {
+    color: var(--text-muted) !important;
+    border-color: var(--text-muted) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_basket,
+.b-top-profile__dropdown .b-top-profile__subitem_history,
+.b-top-profile__dropdown .b-top-profile__subitem_subscriptions,
+.b-top-profile__dropdown .b-top-profile__subitem_arrow,
+.b-top-profile__dropdown .b-top-profile__settings,
+.b-top-profile__dropdown .b-top-profile__close {
+    background-repeat: no-repeat !important;
+    filter: brightness(3.6) contrast(1.15) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem:hover.b-top-profile__subitem_basket,
+.b-top-profile__dropdown .b-top-profile__subitem:hover.b-top-profile__subitem_history,
+.b-top-profile__dropdown .b-top-profile__subitem:hover.b-top-profile__subitem_subscriptions,
+.b-top-profile__dropdown .b-top-profile__subitem:hover.b-top-profile__subitem_arrow,
+.b-top-profile__dropdown .b-top-profile__settings:hover,
+.b-top-profile__dropdown .b-top-profile__close:hover {
+    filter: brightness(4.4) contrast(1.2) !important;
+}
