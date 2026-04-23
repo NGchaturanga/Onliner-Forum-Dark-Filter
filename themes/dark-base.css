@@ -15,9 +15,9 @@
     --bg-quote-nested: #0c1621;
     --bg-button: #182331;
     --bg-button-hover: #1d2a39;
-    --bg-button-primary: #1a2940;
-    --bg-button-success: #1c2a1c;
-    --bg-button-success-hover: #223423;
+    --bg-button-primary: #1a2330;
+    --bg-button-success: #1a2330;
+    --bg-button-success-hover: #243142;
     --bg-spoiler: #3a3a3a;
 
     --border-nav: #223245;
@@ -25,8 +25,8 @@
     --border-strong: #415b78;
     --border-dark: #243547;
     --border-muted: #545454;
-    --border-success: #486246;
-    --border-success-hover: #5d7c5a;
+    --border-success: #415b78;
+    --border-success-hover: #415b78;
 
     --text-main: #dbe7f3;
     --text-muted: #8ea0b4;
@@ -39,7 +39,7 @@
     --text-link-active: #c7e2ff;
     --text-link-visited: #80a0b3;
     --text-link-cite: #8eaee8;
-    --text-link-hot: #f86f84;
+    --text-link-hot: #9fb7d1;
     --text-censored: #337799;
     --text-spoiler: #222222;
 }
@@ -369,35 +369,127 @@ input[type="submit"]:hover {
 .btn-reply,
 .btn-reply:link,
 .btn-reply:visited,
+.btn-style.btn-createsubj,
+.btn-createsubj {
+    background: var(--bg-button-success) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-success) !important;
+}
+
 .btn-reply:hover,
 .btn-reply:active,
 .btn-reply:focus,
-.btn-style.btn-createsubj,
-.btn-createsubj {
-    background: var(--bg-button-primary) !important;
-    color: var(--text-dim) !important;
-    border: 1px solid var(--border-strong) !important;
+.btn-reply:focus-visible,
+.btn-createsubj:hover,
+.btn-createsubj:active,
+.btn-createsubj:focus,
+.btn-createsubj:focus-visible {
+    background: var(--bg-button-success-hover) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-success-hover) !important;
 }
 
 .btn-send,
 .btn-send:link,
 .btn-send:visited,
 .btn-send:active,
-.btn-send:focus {
+.btn-send:focus,
+.btn-send:focus-visible {
     background: var(--bg-button-success) !important;
-    color: var(--text-dim) !important;
+    color: var(--text-main) !important;
     border: 1px solid var(--border-success) !important;
 }
 
 .btn-send:hover {
     background: var(--bg-button-success-hover) !important;
-    color: var(--text-dim) !important;
+    color: var(--text-main) !important;
     border-color: var(--border-success-hover) !important;
 }
 
-.btn-send,
-.btn-send * {
+.btn-reply *,
+.btn-reply:hover *,
+.btn-reply:active *,
+.btn-reply:focus *,
+.btn-reply:focus-visible *,
+.btn-createsubj *,
+.btn-createsubj:hover *,
+.btn-createsubj:active *,
+.btn-createsubj:focus *,
+.btn-createsubj:focus-visible *,
+.btn-send *,
+.btn-send:hover *,
+.btn-send:active *,
+.btn-send:focus *,
+.btn-send:focus-visible *,
+button.btn-send,
+button.btn-send > span,
+button.btn-send > span > span,
+button.btn-send:hover > span,
+button.btn-send:hover > span > span,
+button.btn-send:active > span,
+button.btn-send:active > span > span,
+button.btn-send:focus > span,
+button.btn-send:focus > span > span,
+button.btn-send:focus-visible > span,
+button.btn-send:focus-visible > span > span {
+    color: var(--text-main) !important;
+}
+
+.btn-style span,
+.btn-style span span,
+.btn-reply span,
+.btn-reply span span,
+.btn-createsubj span,
+.btn-createsubj span span,
+.btn-send span,
+.btn-send span span,
+.b-report-btn span,
+.b-report-btn span span,
+.b-report-btn-style span,
+.b-report-btn-style span span {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
     color: inherit !important;
+    text-shadow: none !important;
+}
+
+.preview,
+.preview:link,
+.preview:visited,
+.preview:hover,
+.preview:active,
+.preview:focus,
+.preview:focus-visible,
+a.qq-upload-button,
+a.qq-upload-button:link,
+a.qq-upload-button:visited,
+a.qq-upload-button:hover,
+a.qq-upload-button:active,
+a.qq-upload-button:focus,
+a.qq-upload-button:focus-visible,
+.qq-upload-button,
+.b-report-btn,
+.b-report-btn-style {
+    color: var(--text-main) !important;
+    text-shadow: none !important;
+}
+
+.qq-upload-button,
+.b-report-btn,
+.b-report-btn-style {
+    background: var(--bg-button) !important;
+    border: 1px solid var(--border-main) !important;
+    box-shadow: none !important;
+}
+
+.qq-upload-button:hover,
+.b-report-btn:hover,
+.b-report-btn-style:hover {
+    background: var(--bg-button-hover) !important;
+    border-color: var(--border-strong) !important;
 }
 
 #btnReportSubmit,
@@ -409,11 +501,13 @@ input[type="submit"]:hover {
 }
 
 #btnReportSubmit {
-    background: var(--bg-button-primary) !important;
+    background: var(--bg-button) !important;
     border: 1px solid var(--border-strong) !important;
 }
 
-#btnReportSubmit:hover {
+#btnReportSubmit:hover,
+#btnReportSubmit:focus,
+#btnReportSubmit:focus-visible {
     background: var(--bg-button-hover) !important;
     border-color: var(--border-strong) !important;
 }
@@ -537,25 +631,51 @@ textarea.i-p,
     border-color: var(--border-dark) !important;
 }
 
-.markItUpHeader li {
+.markItUpHeader {
     background: transparent !important;
-    border: 0 !important;
-    margin: 0 !important;
 }
 
-.markItUpHeader li a,
-.markItUpHeader ul li a {
+.markItUpHeader ul {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.markItUpHeader ul li,
+.markItUpHeader ul li.markItUpButton,
+.markItUpHeader ul li.markItUpDropMenu {
     background: var(--bg-page) !important;
-    color: var(--text-muted) !important;
+    background-color: var(--bg-page) !important;
+    background-image: none !important;
     border: 1px solid var(--border-dark) !important;
+    box-shadow: none !important;
+    margin: 0 2px 0 0 !important;
+}
+
+.markItUpHeader ul li a,
+.markItUpHeader ul li.markItUpButton a,
+.markItUpHeader ul li.markItUpDropMenu > a {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: 0 !important;
     box-shadow: none !important;
 }
 
-.markItUpHeader li a:hover,
-.markItUpHeader ul li a:hover {
+.markItUpHeader ul li:hover,
+.markItUpHeader ul li.markItUpButton:hover,
+.markItUpHeader ul li.markItUpDropMenu:hover,
+.markItUpHeader ul li:focus-within {
     background: var(--bg-input-hover) !important;
-    color: var(--text-strong) !important;
-    border-color: var(--border-main) !important;
+    background-color: var(--bg-input-hover) !important;
+    border-color: var(--border-strong) !important;
+}
+
+.markItUpHeader ul ul,
+.markItUpHeader .insert-color,
+.markItUpHeader .insert-size {
+    background: var(--bg-page) !important;
+    background-color: var(--bg-page) !important;
+    background-image: none !important;
+    border: 1px solid var(--border-dark) !important;
 }
 
 span.fpm-area-img_upload {
@@ -682,8 +802,200 @@ a.dark-gray:active {
     color: var(--text-link-hot) !important;
 }
 
+.h-hottopics .b-list-topics li h3 a,
+.h-hottopics .b-list-topics li h3 a:link,
+.h-hottopics .b-list-topics li h3 a:visited {
+    color: var(--text-link-hover) !important;
+}
+
+.h-hottopics .b-list-topics li h3 a:hover,
+.h-hottopics .b-list-topics li h3 a:focus,
+.h-hottopics .b-list-topics li h3 a:focus-visible {
+    color: var(--text-link-active) !important;
+}
+
+.h-hottopics .b-list-topics .b-navonsubj big a,
+.h-hottopics .b-list-topics .b-navonsubj big a:link,
+.h-hottopics .b-list-topics .b-navonsubj big a:visited {
+    color: #93a0ad !important;
+}
+
+.h-hottopics .b-list-topics .b-navonsubj big a:hover,
+.h-hottopics .b-list-topics .b-navonsubj big a:focus,
+.h-hottopics .b-list-topics .b-navonsubj big a:focus-visible {
+    color: #aebbc9 !important;
+}
+
+.h-hottopics .b-list-topics .b-navonsubj > a,
+.h-hottopics .b-list-topics .b-navonsubj > a:link,
+.h-hottopics .b-list-topics .b-navonsubj > a:visited {
+    color: #b9d4f2 !important;
+}
+
+.h-hottopics .b-list-topics .b-navonsubj > a:hover,
+.h-hottopics .b-list-topics .b-navonsubj > a:focus,
+.h-hottopics .b-list-topics .b-navonsubj > a:focus-visible {
+    color: #d3e6ff !important;
+}
+
 .b-lt-subj {
     color: var(--text-link-visited) !important;
+}
+
+.b-pages,
+.pages-fastnav,
+.topic-pages-fastnav,
+.b-hdtopic .b-pages,
+.b-hdtopic .pages-fastnav,
+.b-hdtopic .topic-pages-fastnav {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+.b-pages .pages-fastnav li,
+.b-pages .topic-pages-fastnav li,
+.b-hdtopic .b-pages .pages-fastnav li,
+.b-hdtopic .b-pages .topic-pages-fastnav li {
+    background: var(--bg-button) !important;
+    background-color: var(--bg-button) !important;
+    background-image: none !important;
+    border: 1px solid var(--border-main) !important;
+    box-shadow: none !important;
+}
+
+.b-pages .pages-fastnav li a,
+.b-pages .pages-fastnav li a:link,
+.b-pages .pages-fastnav li a:visited,
+.b-pages .topic-pages-fastnav li a,
+.b-pages .topic-pages-fastnav li a:link,
+.b-pages .topic-pages-fastnav li a:visited,
+.b-hdtopic .b-pages .pages-fastnav li a,
+.b-hdtopic .b-pages .pages-fastnav li a:link,
+.b-hdtopic .b-pages .pages-fastnav li a:visited,
+.b-hdtopic .b-pages .topic-pages-fastnav li a,
+.b-hdtopic .b-pages .topic-pages-fastnav li a:link,
+.b-hdtopic .b-pages .topic-pages-fastnav li a:visited {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: var(--text-main) !important;
+    text-shadow: none !important;
+}
+
+.b-pages .pages-fastnav li:hover,
+.b-pages .pages-fastnav li:focus-within,
+.b-pages .topic-pages-fastnav li:hover,
+.b-pages .topic-pages-fastnav li:focus-within,
+.b-hdtopic .b-pages .pages-fastnav li:hover,
+.b-hdtopic .b-pages .pages-fastnav li:focus-within,
+.b-hdtopic .b-pages .topic-pages-fastnav li:hover,
+.b-hdtopic .b-pages .topic-pages-fastnav li:focus-within {
+    background: var(--bg-button-hover) !important;
+    background-color: var(--bg-button-hover) !important;
+    border-color: var(--border-strong) !important;
+}
+
+.b-pages .pages-fastnav li.exppages,
+.b-pages .pages-fastnav li a.hr,
+.b-pages .topic-pages-fastnav li.exppages,
+.b-pages .topic-pages-fastnav li a.hr,
+.b-hdtopic .b-pages .pages-fastnav li.exppages,
+.b-hdtopic .b-pages .pages-fastnav li a.hr,
+.b-hdtopic .b-pages .topic-pages-fastnav li.exppages,
+.b-hdtopic .b-pages .topic-pages-fastnav li a.hr {
+    background: var(--bg-button-primary) !important;
+    background-color: var(--bg-button-primary) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-strong) !important;
+    box-shadow: none !important;
+}
+
+.b-pages .pages-fastnav li.exppages a,
+.b-pages .pages-fastnav li.exppages a:link,
+.b-pages .pages-fastnav li.exppages a:visited,
+.b-pages .topic-pages-fastnav li.exppages a,
+.b-pages .topic-pages-fastnav li.exppages a:link,
+.b-pages .topic-pages-fastnav li.exppages a:visited {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--text-link-hover) !important;
+    font-weight: 600 !important;
+}
+
+.b-pages .pages-fastnav li.exppages:hover,
+.b-pages .pages-fastnav li.exppages:focus-within,
+.b-pages .topic-pages-fastnav li.exppages:hover,
+.b-pages .topic-pages-fastnav li.exppages:focus-within,
+.b-hdtopic .b-pages .pages-fastnav li.exppages:hover,
+.b-hdtopic .b-pages .pages-fastnav li.exppages:focus-within,
+.b-hdtopic .b-pages .topic-pages-fastnav li.exppages:hover,
+.b-hdtopic .b-pages .topic-pages-fastnav li.exppages:focus-within {
+    background: var(--bg-button-hover) !important;
+    background-color: var(--bg-button-hover) !important;
+}
+
+.b-pages .pages-fastnav li.exppages a i.ar,
+.b-pages .topic-pages-fastnav li.exppages a i.ar,
+.b-hdtopic .b-pages .pages-fastnav li.exppages a i.ar,
+.b-hdtopic .b-pages .topic-pages-fastnav li.exppages a i.ar {
+    opacity: 1 !important;
+    filter: brightness(1.4) !important;
+}
+
+.b-pageslider,
+.b-pageslider-i,
+.pagesslider__ul,
+.pagesslider__ul li,
+.pagesslider__ul li a,
+.pagesslider__ul li a:link,
+.pagesslider__ul li a:visited {
+    background: var(--bg-page) !important;
+    background-color: var(--bg-page) !important;
+    background-image: none !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-main) !important;
+    box-shadow: none !important;
+}
+
+.pagesslider__ul li a:hover,
+.pagesslider__ul li a:focus,
+.pagesslider__ul li a:focus-visible {
+    background: var(--bg-button-hover) !important;
+    background-color: var(--bg-button-hover) !important;
+    color: var(--text-link-hover) !important;
+    border-color: var(--border-strong) !important;
+}
+
+.pagesslider__ul li a.slider-hr,
+.pagesslider__ul li a.slider-drop,
+.pagesslider__ul li a.slider-drop.slider-hr,
+.pagesslider__ul li strong {
+    background: var(--bg-button-primary) !important;
+    background-color: var(--bg-button-primary) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-strong) !important;
+}
+
+.pages-slider-track {
+    background: var(--bg-input) !important;
+    background-color: var(--bg-input) !important;
+    background-image: none !important;
+    border: 1px solid var(--border-main) !important;
+}
+
+.pages-slider-drag {
+    background: var(--bg-button-primary) !important;
+    background-color: var(--bg-button-primary) !important;
+    background-image: none !important;
+    border: 1px solid var(--border-strong) !important;
+    box-shadow: none !important;
+}
+
+.pageslider-shd-l,
+.pageslider-shd-r {
+    background: transparent !important;
+    background-image: none !important;
 }
 
 .b-tls-msg a,
