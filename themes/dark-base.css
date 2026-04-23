@@ -92,6 +92,70 @@ img.onliner_logo {
     color: var(--text-main) !important;
 }
 
+.b-main-navigation__dropdown,
+.b-main-navigation__dropdown .g-top-i,
+.b-main-navigation__dropdown-wrapper,
+.b-main-navigation__dropdown-grid,
+.b-main-navigation__dropdown-column,
+.b-main-navigation__dropdown-news-list,
+.b-main-navigation__dropdown-news-item,
+.b-main-navigation__dropdown-control {
+    background: var(--bg-header) !important;
+    background-color: var(--bg-header) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border-nav) !important;
+    box-shadow: none !important;
+}
+
+.b-main-navigation__dropdown-title,
+.b-main-navigation__dropdown-title-link,
+.b-main-navigation__dropdown-news-link,
+.b-main-navigation__dropdown-news-link:link,
+.b-main-navigation__dropdown-news-link:visited {
+    color: var(--text-main) !important;
+}
+
+.b-main-navigation__dropdown-title-link:hover,
+.b-main-navigation__dropdown-title-link:focus,
+.b-main-navigation__dropdown-title-link:focus-visible,
+.b-main-navigation__dropdown-news-link:hover,
+.b-main-navigation__dropdown-news-link:focus,
+.b-main-navigation__dropdown-news-link:focus-visible {
+    color: var(--text-link-hover) !important;
+}
+
+.b-main-navigation__dropdown-news-description,
+.b-main-navigation__dropdown-news-item,
+.b-main-navigation__dropdown-news-preview,
+.b-main-navigation__dropdown-news-preview:link,
+.b-main-navigation__dropdown-news-preview:visited {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+}
+
+.b-main-navigation__dropdown-button,
+.b-main-navigation__dropdown-button:link,
+.b-main-navigation__dropdown-button:visited {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--text-muted) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.b-main-navigation__dropdown-button:hover,
+.b-main-navigation__dropdown-button:focus,
+.b-main-navigation__dropdown-button:focus-visible {
+    color: var(--text-main) !important;
+}
+
+.b-main-navigation__dropdown-news-label {
+    background: var(--bg-panel-current) !important;
+    background-color: var(--bg-panel-current) !important;
+    color: var(--text-main) !important;
+}
+
 /* Скрыть лишнее в шапке */
 .b-main-navigation__bubble,
 .b-main-navigation__bubble_universal,
