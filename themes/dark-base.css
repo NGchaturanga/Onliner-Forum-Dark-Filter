@@ -400,6 +400,30 @@ input[type="submit"]:hover {
     color: inherit !important;
 }
 
+#btnReportSubmit,
+#btnReportSubmit span,
+#btnReportSubmit span span {
+    color: var(--text-main) !important;
+    background: transparent !important;
+    text-shadow: none !important;
+}
+
+#btnReportSubmit {
+    background: var(--bg-button-primary) !important;
+    border: 1px solid var(--border-strong) !important;
+}
+
+#btnReportSubmit:hover {
+    background: var(--bg-button-hover) !important;
+    border-color: var(--border-strong) !important;
+}
+
+#btnReportSubmit span,
+#btnReportSubmit span span {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
 /*    SEARCH    */
 
 .fast-search__form,
@@ -662,6 +686,36 @@ a.dark-gray:active {
     color: var(--text-link-visited) !important;
 }
 
+.b-tls-msg a,
+.b-tls-msg a:link,
+.b-tls-msg a:visited,
+.b-tls-msg .li-cite a,
+.b-tls-msg .li-cite a:link,
+.b-tls-msg .li-cite a:visited,
+.b-tls-msg .li-complaint a,
+.b-tls-msg .li-complaint a:link,
+.b-tls-msg .li-complaint a:visited {
+    color: var(--text-muted) !important;
+}
+
+.b-tls-msg a:hover,
+.b-tls-msg a:focus,
+.b-tls-msg a:focus-visible,
+.b-tls-msg .li-cite a:hover,
+.b-tls-msg .li-cite a:focus,
+.b-tls-msg .li-cite a:focus-visible,
+.b-tls-msg .li-complaint a:hover,
+.b-tls-msg .li-complaint a:focus,
+.b-tls-msg .li-complaint a:focus-visible {
+    color: var(--text-link-visited) !important;
+}
+
+.b-tls-msg a:active,
+.b-tls-msg .li-cite a:active,
+.b-tls-msg .li-complaint a:active {
+    color: var(--text-link-soft) !important;
+}
+
 /*    GENERIC TEXT / LISTS    */
 
 li,
@@ -688,3 +742,32 @@ li,
 /* .b-mtauthor {
     display: none !important;
 } */
+
+form#report,
+form#report > div,
+form#report .b-report {
+    background: #18212b !important;
+    color: #dbe7f3 !important;
+    border-color: #344150 !important;
+}
+
+form#report .b-report__ttl,
+form#report p,
+form#report dt,
+form#report dd,
+form#report span {
+    color: #dbe7f3 !important;
+}
+
+form#report select,
+form#report textarea,
+form#report .inputbox,
+form#report select.full {
+    background: #0f1722 !important;
+    color: #dbe7f3 !important;
+    border: 1px solid #33465c !important;
+}
+
+form#report textarea::placeholder {
+    color: #8ea0b4 !important;
+}
