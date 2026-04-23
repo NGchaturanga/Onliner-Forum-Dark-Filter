@@ -1154,7 +1154,7 @@ form#report textarea::placeholder {
 
 .b-top-profile__dropdown .b-top-profile__subitem:hover,
 .b-top-profile__dropdown .b-top-profile__subitem:focus-within {
-    background-color: var(--bg-button-hover) !important;
+    background-color: transparent !important;
 }
 
 .b-top-profile__dropdown .b-top-profile__button,
@@ -1198,4 +1198,44 @@ form#report textarea::placeholder {
 .b-top-profile__dropdown .b-top-profile__settings:hover,
 .b-top-profile__dropdown .b-top-profile__close:hover {
     filter: brightness(4.4) contrast(1.2) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .js-open-submenu {
+    background-color: transparent !important;
+    color: var(--text-muted) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    margin-top: 6px !important;
+    padding: 4px 0 !important;
+    box-shadow: none !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__subitem {
+    background-color: transparent !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__subitem:hover,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__subitem:focus-within {
+    background-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link:link,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link:visited {
+    color: var(--text-muted) !important;
+}
+
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link:hover,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link:focus,
+.b-top-profile__dropdown .b-top-profile__subitem_opened > .b-top-profile__sublist .b-top-profile__link:focus-visible {
+    color: var(--text-main) !important;
 }
